@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/commonStyleSheet.css" />
+		<link rel="stylesheet" href="../css/appointmentPageStyleSheet.css" />
+		<title>Lab Test</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container" id="header">
+				<header class="header">Pharmacy</header>
+			</div>
+			<div class="nav-area">
+				<ul>
+					<li class="dropdown-menu">
+						<a href="homePage.html">Home</a>
+					</li>
+					<li class="dropdown-menu">
+						<a href="#">Our Medicines</a>
+						<ul>
+							<li><a href="#">Fever</a></li>
+							<li><a href="#">Muscle Pain</a></li>
+							<li><a href="#">Cold and Cough</a></li>
+						</ul>
+					</li>
+					<li class="dropdown-menu">
+						<a href="#">Health Care</a>
+						<ul>
+							<li><a href="#">Baby Care</a></li>
+							<li><a href="#">Skin Care</a></li>
+							<li><a href="#">Home Care</a></li>
+							<li><a href="#">Personal Care</a></li>
+							<li><a href="#">Pet Care</a></li>
+						</ul>
+					</li>
+					<li class="dropdown-menu">
+						<a href="appointmentPage.html" target="_blank"
+							>Lab Test</a
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="bookAppnmtCont">
+				<div class="form-cont">
+					<form action="#">
+						<div class="form-elements" id="section-1">
+							<div><h1>Your Contact Details</h1></div>
+							<div>
+								<input
+									type="text"
+									placeholder="Full Name"
+									required
+								/>
+								<input
+									type="number"
+									placeholder="Patient Id if exists"
+								/>
+							</div>
+							<div>
+								<input
+									type="number"
+									placeholder="Contact Number"
+									required
+								/>
+								<input type="email" placeholder="Email Id" />
+							</div>
+						</div>
+						<div class="form-elements" id="section-2">
+							<div><h1>Address</h1></div>
+							<div>
+								<input type="text" placeholder="H-No." />
+								<input type="text" placeholder="Street" />
+							</div>
+							<div><input type="text" placeholder="Area" /></div>
+							<div>
+								<label for="districtList" id="dictrictLabel"
+									>District</label
+								><br /><br />
+								<div class="custom-select" w>
+									<select id="districtList">
+										<option value="" selected>
+											Choose
+										</option>
+										<option value="ktch">Kutch</option>
+										<option value="leh">Leh</option>
+										<option value="jaisalmer">
+											Jaisalmer
+										</option>
+										<option value="bikaner">Bikaner</option>
+										<option value="barmer">Barmer</option>
+										<option value="jodhpur">Jodhpur</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-elements" id="section-3">
+							<div>
+								<h1>
+									Choose the Test Type (Check atleast one box
+									without fail)
+								</h1>
+							</div>
+							<label class="checkbox-custom">
+								CBC
+								<input type="checkbox" />
+								<span class="checkbox-checkmark"></span>
+							</label>
+							<label class="checkbox-custom">
+								Complete Urine
+								<input type="checkbox" />
+								<span class="checkbox-checkmark"></span>
+							</label>
+							<label class="checkbox-custom">
+								Lipid Profile
+								<input type="checkbox" />
+								<span class="checkbox-checkmark"></span>
+							</label>
+							<label class="checkbox-custom">
+								Thyroid Stimulating Hormone(TSH)
+								<input type="checkbox" />
+								<span class="checkbox-checkmark"></span>
+							</label>
+							<label class="checkbox-custom">
+								Glucose Test
+								<input type="checkbox" />
+								<span class="checkbox-checkmark"></span>
+							</label>
+						</div>
+						<div class="form-elements" id="section-4">
+							<div>
+								<h1>
+									Do you want a hard copy of the report also?
+								</h1>
+							</div>
+							<label class="radio-custom">
+								Yes
+								<input type="radio" name="radio" />
+								<span class="radio-checkmark"></span>
+							</label>
+							<label class="radio-custom">
+								No
+								<input type="radio" name="radio" />
+								<span class="radio-checkmark"></span>
+							</label>
+						</div>
+						<div class="form-elements" id="section-5">
+							<div>
+								<h1>Select Your Comfortable Date and Time</h1>
+							</div>
+							<div>
+								<label for="appntDate">Date: </label
+								><input type="date" id="appntDate" />
+							</div>
+							<div>
+								<label for="appntTime">Time: </label
+								><input type="time" id="appntTime" />
+							</div>
+						</div>
+						<div class="form-elements form-actions" id="section-6">
+							<input type="submit" />
+							<input type="reset" />
+						</div>
+					</form>
+				</div>
+				<div class="imgcont">
+					<img src="../Images\Lab-Test\lab-test.jpg" alt="lastTest" />
+				</div>
+			</div>
+			<div class="container" id="footer">
+				<footer class="footer">
+					@copyright. Only for demonstration purposes
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
